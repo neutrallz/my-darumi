@@ -11,7 +11,6 @@ const NotFound = () => (
       </Heading>
       <Section delay={0.3}>
         <Heading as="h3" fontSize={30} mb={3}>Sorry, page not found.</Heading>
-        <Text>This page is on development, please be patient 🙌.</Text>
         <Divider my={6} />
         <Box my={6} align="center">
           <NextLink href="/" passHref>
