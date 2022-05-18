@@ -22,8 +22,8 @@ import {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://www.yorikoform.herokuapp.com/">
-            https://www.yorikoform.herokuapp.com/ <ExternalLinkIcon mx="2px" />
+            <Link href="https://yorikoform.herokuapp.com/">
+            https://yorikoform.herokuapp.com/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
         </List>

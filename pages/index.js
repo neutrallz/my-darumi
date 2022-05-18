@@ -14,7 +14,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoInstagram, IoLogoGithub, IoLogoFacebook } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoFacebook, IoLogoWhatsapp } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -37,7 +37,7 @@ const Home = () => (
       </Box>
 
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
+        <Box flexGrow={1} mt={8}>
           <Heading as="h2" variant="page-title">
             Ahmad Fauzi
           </Heading>
@@ -53,8 +53,8 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="150px"
+            h="150px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
@@ -63,8 +63,8 @@ const Home = () => (
               src="/images/pict.jpg"
               alt="Profile image"
               borderRadius="full"
-              width="100%"
-              height="100%"
+              width="150px"
+              height="150px"
             />
           </Box>
         </Box>
@@ -72,7 +72,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          About me.
+          About me
         </Heading>
         <Paragraph>
           Born in 2000, I grew up in the midst of the digital rise. As a teenager
@@ -81,7 +81,7 @@ const Home = () => (
           web developer as a bachelors degree at the Institute of Technology of
           Pagar Alam. There, I learnt everything about how to, develop, and design a
           web. After my studies, I wanna become professional web developer and 
-          I&apos;m currently learning javascript(reactjs/nextjs) and python XD.
+          I&apos;m currently learning javascript (reactjs & nextjs) and python.
         </Paragraph>
         <Box align="center" my={5}>
           <NextLink href="/works" passHref scroll={false}>
@@ -94,7 +94,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          My hobbies.
+          My hobby
         </Heading>
         <Paragraph>
           Gaming, Music, Design, Coding, and Drink some Coffee.
@@ -103,7 +103,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          Contact me.
+          Contact
         </Heading>
         <List>
           <ListItem>
@@ -131,7 +131,16 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoFacebook />}
               >
-                @sycletz
+                Ahmad Fauzi
+              </Button>
+            </Link>
+            <Link href="https://wa.me/628992490269" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoWhatsapp />}
+              >
+                WhatsApp
               </Button>
             </Link>
           </ListItem>
