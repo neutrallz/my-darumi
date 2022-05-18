@@ -74,7 +74,7 @@ const Navbar = props => {
             My Works
           </LinkItem>
           <LinkItem href="/galery" path={path}>
-            My Photos
+            My Galery
           </LinkItem>
         </Stack>
 
@@ -100,7 +100,7 @@ const Navbar = props => {
                   <MenuItem as={Link}>My Works</MenuItem>
                 </NextLink>
                 <NextLink href="/galery" passHref>
-                  <MenuItem as={Link}>My Photos</MenuItem>
+                  <MenuItem as={Link}>My Galery</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
