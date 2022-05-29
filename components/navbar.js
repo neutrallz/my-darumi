@@ -73,6 +73,9 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
+          <LinkItem href="https://api-darumi.herokuapp.com" path={path}>
+            Rest API
+          </LinkItem>
           <LinkItem href="/download" path={path}>
             Download CV
           </LinkItem>
@@ -95,6 +98,9 @@ const Navbar = props => {
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="https://api-darumi.herokuapp.com" passHref>
+                  <MenuItem as={Link}>Rest API</MenuItem>
                 </NextLink>
                 <NextLink href="/download" passHref>
                   <MenuItem as={Link}>Download CV</MenuItem>
