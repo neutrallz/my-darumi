@@ -16,6 +16,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoInstagram, IoLogoGithub, IoLogoFacebook, IoLogoWhatsapp } from 'react-icons/io5'
 import Image from 'next/image'
+import Typed from 'react-typed'
+import Learning from './api/skill.js'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -33,7 +35,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an front end developer based in Indonesia!
+      Hello, I&apos;m an front end developer based in Indonesia.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -80,8 +82,19 @@ const Home = () => (
           in the graphic design and web designer. After school, I started to study
           web developer as a bachelors degree at the Institute of Technology of
           Pagar Alam. There, I learnt everything about how to, develop, and design a
-          web. After my studies, I wanna become professional web developer and 
-          I&apos;m currently learning javascript (reactjs & nextjs) and python.
+          web. After my studies, I wanna become professional web developer and
+          I&apos;m currently learning {' '}
+          <Typed
+                loop
+                typeSpeed={100}
+                backSpeed={20}
+                strings={Learning}
+                smartBackspace
+                backDelay={1000}
+                loopCount={0}
+                showCursor
+                cursorChar="|"
+        />
         </Paragraph>
         <Box align="center" my={5}>
           <NextLink href="/works" passHref scroll={false}>

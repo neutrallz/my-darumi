@@ -70,10 +70,13 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/" path={path}>
+            Home
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="https://api-darumi.herokuapp.com" path={path}>
+          <LinkItem href="https://api.darumi.my.id" path={path}>
             Rest API
           </LinkItem>
           <LinkItem href="/download" path={path}>
@@ -99,7 +102,7 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="https://api-darumi.herokuapp.com" passHref>
+                <NextLink href="https://api.darumi.my.id" passHref>
                   <MenuItem as={Link}>Rest API</MenuItem>
                 </NextLink>
                 <NextLink href="/download" passHref>
